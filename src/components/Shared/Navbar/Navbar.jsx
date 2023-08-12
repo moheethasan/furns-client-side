@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../../assets/icon.png";
+import logo from "../../../assets/logo.png";
 import { FaUserCircle } from "react-icons/fa";
 import { HiArrowLongRight } from "react-icons/hi2";
 

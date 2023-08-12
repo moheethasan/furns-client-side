@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Comfort Supreme Bed",
+    "image": "https://i.ibb.co/WfhyWMj/75-url-https-cdn-shopify-com-s-files-1-0597-8970-5392-products-1.jpg",
+    "details": "Experience unparalleled sleep comfort with our premium bed, designed for restful nights.",
+    "price": 1299.99,
+    "availability": 10
+  },
+  {
+    "name": "Luxury Lounge Sofa",
+    "image": "https://i.ibb.co/6BM07sy/75-url-https-cdn-shopify-com-s-files-1-0597-8970-5392-products-11-02.jpg",
+    "details": "Indulge in the epitome of luxury and relaxation with our exquisite lounge sofa.",
+    "price": 1899.5,
+    "availability": 5
+  },
+  {
+    "name": "Elegant Bedside Table",
+    "image": "https://i.ibb.co/HpmMTjm/75-url-https-cdn-shopify-com-s-files-1-0597-8970-5392-products-5-c8625a3e-4a89-478d-8f51-b5b5d6b1057.jpg",
+    "details": "Add a touch of elegance to your bedroom with our stylish bedside table.",
+    "price": 149.99,
+    "availability": 20
+  },
+  {
+    "name": "Modern Hospital Reception Table",
+    "image": "https://i.ibb.co/ypn3vRB/75-url-https-cdn-shopify-com-s-files-1-0597-8970-5392-products-1-6c997eeb-8f70-49d3-8432-0d82b2c83c8.jpg",
+    "details": "Create a welcoming reception area with our contemporary hospital reception table.",
+    "price": 499.0,
+    "availability": 2
+  },
+  {
+    "name": "Chic Dining Table",
+    "image": "https://i.ibb.co/XY6X6tW/75-url-https-cdn-shopify-com-s-files-1-0597-8970-5392-products-1-d9913561-510c-4d82-8185-4e4fd382874.jpg",
+    "details": "Gather your loved ones around this chic dining table for memorable meals.",
+    "price": 799.99,
+    "availability": 8
+  },
+  {
+    "name": "Premium Gaming Chair",
+    "image": "https://i.ibb.co/Z8brhXJ/75-url-https-cdn-shopify-com-s-files-1-0597-8970-5392-products-1-9e2a3ec9-9f65-4f5d-8c3e-c069b7ef2e3.jpg",
+    "details": "Elevate your gaming experience with our ergonomic and stylish gaming chair.",
+    "price": 299.99,
+    "availability": 15
+  },
+  {
+    "name": "Elegant Office Lounge Chair",
+    "image": "https://i.ibb.co/fdYtxcr/75-url-https-cdn-shopify-com-s-files-1-0597-8970-5392-products-2-f43a8aeb-8572-4889-9c86-cc7914ee064.jpg",
+    "details": "Transform your office into a comfortable haven with our elegant lounge chair.",
+    "price": 399.0,
+    "availability": 6
+  },
+  {
+    "name": "Mid-Century Styled Bed",
+    "image": "https://i.ibb.co/zGwQ4bF/75-url-https-cdn-shopify-com-s-files-1-0597-8970-5392-products-2.jpg",
+    "details": "Embrace the timeless charm of mid-century design with our stylish bed.",
+    "price": 999.0,
+    "availability": 3
+  }
+]
