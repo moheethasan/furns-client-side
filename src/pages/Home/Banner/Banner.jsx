@@ -2,7 +2,7 @@ import banner from "../../../assets/banner.jpg";
 
 const Banner = () => {
   return (
-    <header className="relative">
+    <header className="relative mb-16 md:mb-24">
       <img
         className="w-full object-cover h-[370px] sm:h-[430px] md:h-[490px] lg:h-[560px] xl:h-[650px] 2xl:h-[750px]"
         src={banner}

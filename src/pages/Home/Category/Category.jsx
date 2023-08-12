@@ -12,7 +12,7 @@ import officeChair from "../../../assets/office-chair.png";
 
 const Category = () => {
   return (
-    <div className="container mx-auto select-none px-4 my-24">
+    <div className="container mx-auto select-none px-4">
       <Swiper
         loop={true}
         freeMode={true}
