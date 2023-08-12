@@ -1,11 +1,26 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../../assets/logo.png";
 import { FaUserCircle } from "react-icons/fa";
-import { HiArrowLongRight } from "react-icons/hi2";
+import useAuth from "../../../hooks/useAuth";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
-  const user = true;
+  const { user, logOut } = useAuth();
   const isAdmin = false;
+
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: "User logged out successfully",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      })
+      .catch((error) => console.log(error.message));
+  };
 
   const navOptions = (
     <>
@@ -96,13 +111,13 @@ const Navbar = () => {
                   <FaUserCircle className="text-black text-3xl md:text-4xl" />
                 )}
               </div>
-              <button className="btn-secondary">Logout</button>
+              <button onClick={handleLogOut} className="btn-secondary">
+                Logout
+              </button>
             </div>
           ) : (
             <Link to="/login">
-              <button className="btn-secondary flex gap-2 items-center">
-                Login <HiArrowLongRight className="text-2xl" />
-              </button>
+              <button className="btn-secondary">Login</button>
             </Link>
           )}
         </div>
