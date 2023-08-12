@@ -1,16 +1,11 @@
-import { Link, NavLink, useLocation } from "react-router-dom";
-import logo from "../../../../public/icon.png";
+import { Link, NavLink } from "react-router-dom";
+import logo from "../../../assets/icon.png";
 import { FaUserCircle } from "react-icons/fa";
 import { HiArrowLongRight } from "react-icons/hi2";
 
 const Navbar = () => {
   const user = true;
   const isAdmin = false;
-  const location = useLocation();
-  const isHomeLoginRegister =
-    location.pathname === "/" ||
-    location.pathname === "/login" ||
-    location.pathname === "/register";
 
   const navOptions = (
     <>
@@ -45,11 +40,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav
-      className={`bg-white bg-opacity-100 w-full py-4 md:py-6 z-20 ${
-        isHomeLoginRegister ? "fixed z-10 bg-opacity-30" : ""
-      }`}
-    >
+    <nav className="bg-slate-300 w-full py-1 md:py-3 z-50">
       <div className="navbar container mx-auto px-4">
         <div className="navbar-start">
           <div className="dropdown">
@@ -74,12 +65,14 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 px-4 py-3 shadow bg-black rounded-lg bg-opacity-70 w-40"
+              className="menu menu-compact dropdown-content mt-4 md:mt-6 px-4 py-3 shadow bg-white rounded-lg z-50 w-40"
             >
               {navOptions}
             </ul>
           </div>
-          <img className="w-28 md:w-32 lg:w-40" src={logo} alt="logo" />
+          <Link to="/">
+            <img className="w-28 md:w-32 lg:w-40" src={logo} alt="logo" />
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal gap-1 md:gap-5">{navOptions}</ul>

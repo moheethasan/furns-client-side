@@ -11,9 +11,9 @@
 }
 
 .active {
-  @apply font-medium tracking-wide text-orange-500 text-base;
+  @apply text-base font-medium text-orange-500;
 }
 
 .default {
-  @apply font-medium tracking-wide text-black hover:text-orange-500 text-base;
+  @apply text-base font-medium text-black hover:text-orange-500;
 }
