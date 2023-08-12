@@ -1,10 +1,10 @@
-import banner from "../../../assets/slider-1.jpg";
+import banner from "../../../assets/banner.jpg";
 
 const Banner = () => {
   return (
     <header className="relative">
       <img
-        className="w-full object-cover h-[370px] sm:h-[430px] md:h-[490px] lg:h-[560px] xl:h-[650px] 2xl:h-[720px]"
+        className="w-full object-cover h-[370px] sm:h-[430px] md:h-[490px] lg:h-[560px] xl:h-[650px] 2xl:h-[750px]"
         src={banner}
         alt="banner"
       />
