@@ -1,57 +1,57 @@
 [
   {
     "name": "Comfort Supreme Bed",
-    "image": "https://i.ibb.co/WfhyWMj/75-url-https-cdn-shopify-com-s-files-1-0597-8970-5392-products-1.jpg",
-    "details": "Experience unparalleled sleep comfort with our premium bed, designed for restful nights.",
+    "image": "path/to/bed-image.jpg",
+    "details": "Indulge in luxurious sleep comfort with our premium Comfort Supreme Bed. Crafted with the finest materials and expert craftsmanship, this bed is designed to provide you with restful nights and exquisite style. Its elegant design and ergonomic features ensure that you wake up rejuvenated and ready to take on the day.",
     "price": 1299.99,
     "availability": 10
   },
   {
     "name": "Luxury Lounge Sofa",
-    "image": "https://i.ibb.co/6BM07sy/75-url-https-cdn-shopify-com-s-files-1-0597-8970-5392-products-11-02.jpg",
-    "details": "Indulge in the epitome of luxury and relaxation with our exquisite lounge sofa.",
+    "image": "path/to/sofa-image.jpg",
+    "details": "Experience the epitome of luxury and relaxation with our exquisite Luxury Lounge Sofa. Its sumptuous cushions, premium upholstery, and meticulous craftsmanship create a haven of comfort and style in your living space. Whether you're hosting guests or unwinding after a long day, this sofa offers unparalleled comfort and timeless elegance.",
     "price": 1899.5,
     "availability": 5
   },
   {
     "name": "Elegant Bedside Table",
-    "image": "https://i.ibb.co/HpmMTjm/75-url-https-cdn-shopify-com-s-files-1-0597-8970-5392-products-5-c8625a3e-4a89-478d-8f51-b5b5d6b1057.jpg",
-    "details": "Add a touch of elegance to your bedroom with our stylish bedside table.",
+    "image": "path/to/bedside-table-image.jpg",
+    "details": "Add a touch of timeless elegance to your bedroom with our Elegant Bedside Table. This beautifully crafted piece features a classic design, versatile storage options, and high-quality materials. Its refined aesthetics and functional features make it the perfect companion to your bed, enhancing both style and convenience in your space.",
     "price": 149.99,
     "availability": 20
   },
   {
     "name": "Modern Hospital Reception Table",
-    "image": "https://i.ibb.co/ypn3vRB/75-url-https-cdn-shopify-com-s-files-1-0597-8970-5392-products-1-6c997eeb-8f70-49d3-8432-0d82b2c83c8.jpg",
-    "details": "Create a welcoming reception area with our contemporary hospital reception table.",
+    "image": "path/to/reception-table-image.jpg",
+    "details": "Create a welcoming and contemporary reception area with our Modern Hospital Reception Table. Its sleek design, durable construction, and thoughtful layout make it an ideal choice for healthcare settings. Whether it's for checking in patients or providing information, this table combines style and functionality to enhance any reception space.",
     "price": 499.0,
     "availability": 2
   },
   {
     "name": "Chic Dining Table",
-    "image": "https://i.ibb.co/XY6X6tW/75-url-https-cdn-shopify-com-s-files-1-0597-8970-5392-products-1-d9913561-510c-4d82-8185-4e4fd382874.jpg",
-    "details": "Gather your loved ones around this chic dining table for memorable meals.",
+    "image": "path/to/dining-table-image.jpg",
+    "details": "Gather your loved ones around the Chic Dining Table for memorable meals and meaningful conversations. Its sophisticated design, sturdy build, and ample seating space make it a perfect addition to your dining area. Crafted for both style and durability, this table sets the stage for unforgettable dining experiences.",
     "price": 799.99,
     "availability": 8
   },
   {
     "name": "Premium Gaming Chair",
-    "image": "https://i.ibb.co/Z8brhXJ/75-url-https-cdn-shopify-com-s-files-1-0597-8970-5392-products-1-9e2a3ec9-9f65-4f5d-8c3e-c069b7ef2e3.jpg",
-    "details": "Elevate your gaming experience with our ergonomic and stylish gaming chair.",
+    "image": "path/to/gaming-chair-image.jpg",
+    "details": "Elevate your gaming experience with the ergonomically designed Premium Gaming Chair. Engineered for comfort and support, this chair ensures hours of immersive gameplay without sacrificing style. With adjustable features, premium materials, and a sleek aesthetic, it's the ultimate companion for both casual and professional gamers.",
     "price": 299.99,
     "availability": 15
   },
   {
     "name": "Elegant Office Lounge Chair",
-    "image": "https://i.ibb.co/fdYtxcr/75-url-https-cdn-shopify-com-s-files-1-0597-8970-5392-products-2-f43a8aeb-8572-4889-9c86-cc7914ee064.jpg",
-    "details": "Transform your office into a comfortable haven with our elegant lounge chair.",
+    "image": "path/to/office-lounge-chair-image.jpg",
+    "details": "Transform your office into a comfortable haven with the Elegant Office Lounge Chair. Its sophisticated design, plush cushioning, and ergonomic features create a space where work meets relaxation. Whether it's for brainstorming sessions or moments of respite, this chair enhances your office ambiance and fosters productivity.",
     "price": 399.0,
     "availability": 6
   },
   {
     "name": "Mid-Century Styled Bed",
-    "image": "https://i.ibb.co/zGwQ4bF/75-url-https-cdn-shopify-com-s-files-1-0597-8970-5392-products-2.jpg",
-    "details": "Embrace the timeless charm of mid-century design with our stylish bed.",
+    "image": "path/to/mid-century-bed-image.jpg",
+    "details": "Embrace the timeless charm of mid-century design with the Mid-Century Styled Bed. Inspired by the iconic aesthetic of the mid-20th century, this bed combines retro elegance with modern comfort. Crafted with attention to detail and quality, it transforms your bedroom into a stylish retreat where vintage meets contemporary.",
     "price": 999.0,
     "availability": 3
   }

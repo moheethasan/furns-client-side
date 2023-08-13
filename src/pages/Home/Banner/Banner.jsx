@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import banner from "../../../assets/banner.jpg";
 
 const Banner = () => {
@@ -20,9 +21,9 @@ const Banner = () => {
           Furns. Explore limitless possibilities and elevate your home&#39;s
           elegance.
         </p>
-        <button className="btn-primary">
-          <span className="flex items-center gap-1">Shop Now</span>
-        </button>
+        <Link to="/products" className="btn-primary">
+          Shop Now
+        </Link>
       </div>
     </header>
   );

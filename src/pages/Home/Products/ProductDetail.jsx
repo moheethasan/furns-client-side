@@ -1,15 +1,15 @@
 import { FaShoppingCart } from "react-icons/fa";
-import { AiOutlineFullscreen } from "react-icons/ai";
-import { Link, useNavigate } from "react-router-dom";
+import { useLoaderData, useNavigate } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import Swal from "sweetalert2";
 import axios from "axios";
 
-const SingleProduct = ({ product }) => {
+const ProductDetail = () => {
+  const product = useLoaderData();
+  const { name, image, details, price, availability } = product || {};
+
   const { user } = useAuth();
   const navigate = useNavigate();
-
-  const { _id, name, image, details, availability, price } = product || {};
 
   const handleAddToCart = () => {
     if (!user) {
@@ -51,36 +51,26 @@ const SingleProduct = ({ product }) => {
   };
 
   return (
-    <div className="text-center group">
-      <div className="relative">
-        <Link to={`/products/${_id}`}>
-          <img className="mb-4" src={image} alt="product" />
-        </Link>
-        <Link
-          to={`/products/${_id}`}
-          className="absolute top-2 right-2 ml-2 p-2 bg-white rounded-full hover:text-orange-600 tooltip tooltip-left hidden group-hover:block"
-          data-tip="View Details"
-        >
-          <AiOutlineFullscreen size={20} />
-        </Link>
-        <button
-          onClick={() => handleAddToCart()}
-          className="bg-white hover:text-orange-600 p-px sm:p-1 md:p-2 text-xs md:text-sm absolute bottom-3 left-1/2 transform -translate-x-1/2 font-medium hidden group-hover:block"
-        >
-          <span className="flex items-center gap-1">
-            <FaShoppingCart /> Add to Cart
-          </span>
-        </button>
-      </div>
-      <Link
-        to={`/products/${_id}`}
-        className="md:text-lg hover:text-orange-600"
-      >
+    <div className="container mx-auto px-4 mt-16 md:mt-24">
+      <h3 className="text-center text-3xl md:text-4xl lg:text-5xl mb-2 font-bold">
         {name}
-      </Link>
-      <h3 className="md:text-lg">${price}</h3>
+      </h3>
+      <div className="md:flex justify-center items-center md:gap-6 lg:gap-10 mt-16 md:mt-24">
+        <img className="w-full mb-8 md:mb-0" src={image} alt="product" />
+        <div>
+          <p className="text-sm">Availability: {availability} in Stock</p>
+          <h2 className="text-2xl font-semibold">{name}</h2>
+          <p className="text-xl font-medium mt-2">${price}</p>
+          <p className="my-4">{details}</p>
+          <button onClick={() => handleAddToCart()} className="btn-primary">
+            <span className="flex items-center gap-1">
+              <FaShoppingCart /> Add to Cart
+            </span>
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default SingleProduct;
+export default ProductDetail;
