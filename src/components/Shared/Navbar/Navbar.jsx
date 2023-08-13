@@ -3,10 +3,11 @@ import logo from "../../../assets/logo.png";
 import { FaUserCircle } from "react-icons/fa";
 import useAuth from "../../../hooks/useAuth";
 import Swal from "sweetalert2";
+import useAdmin from "../../../hooks/useAdmin";
 
 const Navbar = () => {
   const { user, logOut } = useAuth();
-  const isAdmin = false;
+  const [isAdmin] = useAdmin();
 
   const handleLogOut = () => {
     logOut()
