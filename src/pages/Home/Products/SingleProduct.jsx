@@ -23,7 +23,7 @@ const SingleProduct = ({ product }) => {
         confirmButtonText: "Login",
       }).then((result) => {
         if (result.isConfirmed) {
-          navigate("/login", { state: { from: location } });
+          navigate("/login");
         }
       });
     }
