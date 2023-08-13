@@ -1,7 +1,7 @@
 import { FaBoxOpen, FaPaperPlane, FaUsers } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import useAuth from "../../hooks/useAuth";
-import Loader from "../../components/Shared/Loader/Loader";
+import useAuth from "../../../hooks/useAuth";
+import Loader from "../../../components/Shared/Loader/Loader";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
@@ -61,13 +61,13 @@ const Dashboard = () => {
         </div>
         <div className="flex flex-col gap-3">
           <Link
-            to="/dashboard/allProducts"
+            to="/dashboard/allCustomers"
             className="px-3 py-2 font-medium border-2 border-slate-700 hover:text-white hover:border-orange-600 hover:bg-orange-600 text-sm"
           >
             All Customers
           </Link>
           <Link
-            to="/dashboard/allCustomers"
+            to="/dashboard/allProducts"
             className="px-3 py-2 font-medium border-2 border-slate-700 hover:text-white hover:border-orange-600 hover:bg-orange-600 text-sm"
           >
             All Products

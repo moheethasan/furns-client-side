@@ -7,7 +7,12 @@ import Products from "../pages/Home/Products/Products";
 import ProductDetail from "../pages/Home/Products/ProductDetail";
 import Cart from "../pages/Cart/Cart";
 import Checkout from "../pages/Cart/Checkout";
-import Dashboard from "../pages/Dashboard/Dashboard";
+import Dashboard from "../pages/Dashboard/Dashboard/Dashboard";
+import AllCustomers from "../pages/Dashboard/AllCustomers/AllCustomers";
+import AllOrders from "../pages/Dashboard/AllOrders/AllOrders";
+import AllProducts from "../pages/Dashboard/AllProducts/AllProducts";
+import CustomerDetails from "../pages/Dashboard/AllCustomers/CustomerDetails";
+import AddProduct from "../pages/Dashboard/AddProduct/AddProduct";
 
 export const router = createBrowserRouter([
   {
@@ -41,6 +46,28 @@ export const router = createBrowserRouter([
       {
         path: "dashboard",
         element: <Dashboard></Dashboard>,
+      },
+      {
+        path: "dashboard/allCustomers",
+        element: <AllCustomers></AllCustomers>,
+      },
+      {
+        path: "allCustomers/:id",
+        element: <CustomerDetails></CustomerDetails>,
+        loader: ({ params }) =>
+          fetch(`${import.meta.env.VITE_apiUrl}/users/${params.id}`),
+      },
+      {
+        path: "dashboard/allProducts",
+        element: <AllProducts></AllProducts>,
+      },
+      {
+        path: "dashboard/addProduct",
+        element: <AddProduct></AddProduct>,
+      },
+      {
+        path: "dashboard/allOrders",
+        element: <AllOrders></AllOrders>,
       },
       {
         path: "login",

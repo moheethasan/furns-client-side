@@ -44,6 +44,7 @@ const Register = () => {
                   const saveUser = {
                     name: data?.name,
                     email: data?.email,
+                    phone: data?.number,
                     image: imgURL,
                     role: "user",
                   };
