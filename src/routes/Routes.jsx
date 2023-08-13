@@ -5,6 +5,8 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import Products from "../pages/Home/Products/Products";
 import ProductDetail from "../pages/Home/Products/ProductDetail";
+import Cart from "../pages/Cart/Cart";
+import Checkout from "../pages/Cart/Checkout";
 
 export const router = createBrowserRouter([
   {
@@ -24,6 +26,16 @@ export const router = createBrowserRouter([
         element: <ProductDetail></ProductDetail>,
         loader: ({ params }) =>
           fetch(`${import.meta.env.VITE_apiUrl}/products/${params.id}`),
+      },
+      {
+        path: "cart",
+        element: <Cart></Cart>,
+      },
+      {
+        path: "paymentCheckout/:id",
+        element: <Checkout></Checkout>,
+        loader: ({ params }) =>
+          fetch(`${import.meta.env.VITE_apiUrl}/purchases/${params.id}`),
       },
       {
         path: "login",
