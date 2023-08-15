@@ -15,6 +15,8 @@ sort-by
 sweetalert2
 swiper
 
+##### Admin credential: email: jobs@repliq.dev, pass: 123456A!
+
 ## Live Site Link
 
 https://furns-5380b.web.app
